@@ -39,6 +39,11 @@
 	color:grey;
 }
 .section{
+	margin: 50px 0px;
+}
+.price-section ,.blog-section
+{
+	background-color: #f6f6f6;
 	padding: 50px 0px;
 }
 /*TOP SECTION*/
@@ -505,10 +510,7 @@ a
 	color: #008374;
 }
 /*PRICING SECTION*/
-.price-section 
-{
-	background-color: #f6f6f6;
-}
+
 .price-content
 {
 	background-color: white;
@@ -596,6 +598,43 @@ a
 .price-row{
 	padding: 50px 0px;
 }
+/*Blog SECTION*/
+.blog-content>img{
+	width: 100%;
+	border-top-left-radius: 3%;
+	border-top-right-radius: 3%;
+}
+.blog-content{
+	margin: 10px;
+	box-shadow: 0 0 15px #d8d5d5;
+	border-radius: 3%;
+}
+.blog-foot{
+	display: flex;
+	margin-top: 20px;
+}
+.blog-foot img{
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+	display: block;
+}
+.blog-tit{
+	padding: 25px;
+}
+.blog-tit span,.blog-tit h3{
+	display: block;
+	margin-bottom: 10px;
+}
+.blog-cont{
+	margin-left: 20px;
+}
+.blog-cont p{
+	margin-bottom: 5px;
+}
+.blog-col span{
+	color: gray;
+}
 @media (min-width:320px)
 {
 	.container
@@ -669,6 +708,9 @@ a
 	.price-col
 	{
 		margin-bottom: 20px;
+	}
+	.blog-col{
+		width:100%;
 	}
 }
 @media (min-width:600px)
@@ -745,6 +787,14 @@ a
 	.price-col
 	{
 		margin-bottom: 20px;
+	}
+	.blog-row
+	{
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.blog-col{
+		width:50%;
 	}
 }
 @media (min-width:1020px)
@@ -868,5 +918,12 @@ a
 	}
 	.col2{
 		width: 70% !important;
+	}
+	.blog-row
+	{
+		display: flex;
+	}
+	.blog-col{
+		width: 33.3%;
 	}
 }
